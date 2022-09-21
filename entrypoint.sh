@@ -159,6 +159,7 @@ else
     # Uncommitted changes
     git add -A
     git commit --message "${COMMIT_MESSAGE}"
+    git pull
     git push origin ${DST_BRANCH}
 fi
 
