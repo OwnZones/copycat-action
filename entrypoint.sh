@@ -160,7 +160,7 @@ else
     git add -A
     git commit --message "${COMMIT_MESSAGE}"
     git pull --rebase
-    git push origin ${DST_BRANCH}
+    git push origin ${DST_BRANCH} || exit 1
 fi
 
 echo "Copying complete 👌"
